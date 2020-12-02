@@ -46,15 +46,15 @@ jobs:
         - name: Run 号码2
           env:
            haoma: ${{ secrets.HAOMA2 }}
-           mm: ${{ secrets.MM2 }}
+           mm: ${{ secrets.MM }}
            appid: ${{ secrets.APPID }}
           run: |
-           bash CnUnicom.sh ${haoma2} ${mm2} ${appid2}
+           bash CnUnicom.sh ${haoma} ${mm} ${appid}
 
         - name: Run 号码3
           env:
            haoma: ${{ secrets.HAOMA3 }}
-           mm: ${{ secrets.MM3 }}
+           mm: ${{ secrets.MM }}
            appid: ${{ secrets.APPID }}
           run: |
-           bash CnUnicom.sh ${haoma3} ${mm3} ${appid3}
+           bash CnUnicom.sh ${haoma} ${mm} ${appid}
